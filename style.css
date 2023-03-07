@@ -97,16 +97,84 @@ html, body{
 }
 
 @media only screen and (max-width: 768px) {
+    *{
+        font-size: 1.25em;
+    }
     .sub-container{
         position: absolute;
+    }
+    .d{
+        text-align: center;
     }
     
     .d1{
         border: 5px solid rebeccapurple;
         background-color: blueviolet;
-        height: 100px;
-        width: 100px;
+        height: 50px;
+        width: 50px;
         display: inline-block;
-        margin: 20px;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+    .d2{
+        position: relative;
+        border: 5px solid rebeccapurple;
+        background-color: blueviolet;
+        height: 50px;
+        width: 50px;
+        display: inline-block;
+        margin: 5px;
+        top: 15px;
+        left: 0px;
+        transform: rotate(15deg);
+    }
+    .d3{
+        position: relative;
+        border: 5px solid rebeccapurple;
+        background-color: blueviolet;
+        height: 50px;
+        width: 50px;
+        display: inline-block;
+        margin: 5px;
+        top: 60px;
+        left: 5px;
+        transform: rotate(30deg);
+    }
+    .d4{
+        position: relative;
+        border: 5px solid rebeccapurple;
+        background-color: blueviolet;
+        height: 50px;
+        width: 50px;
+        display: inline-block;
+        margin: 5px;
+        top: 135px;
+        left: 5px;
+        transform: rotate(45deg);
+    }
+
+    .d5{
+        position: relative;
+        border: 5px solid rebeccapurple;
+        background-color: blueviolet;
+        height: 50px;
+        width: 50px;
+        display: inline-block;
+        margin: 5px;
+        top: 240px;
+        left: -10px;
+        transform: rotate(45deg);
+    }
+    .d6{
+        position: relative;
+        border: 5px solid rebeccapurple;
+        background-color: blueviolet;
+        height: 50px;
+        width: 50px;
+        display: inline-block;
+        margin: 5px;
+        top: 300px;
+        left: 50%;
+        transform: rotate(60deg);
     }
 }
