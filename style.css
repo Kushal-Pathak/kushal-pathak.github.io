@@ -1,180 +1,96 @@
-*{
-    margin:0;
-    font-family: sans-serif;
-    font-weight: 300;
-    font-size: 1.4em;
-}
-html, body{
-    height: 100%;
-}
-.container{
-    background-color: black;
-    height: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
-@media only screen and (min-width:768px){
-    .sub-container{
-        position: absolute;
-    }
-    
-    .d1{
-        border: 5px solid rebeccapurple;
-        background-color: blueviolet;
-        height: 100px;
-        width: 100px;
-        display: inline-block;
-        margin: 20px;
-    }
-    
-    .d2{
-        border: 5px solid rebeccapurple;
-        background-color: blueviolet;
-        height: 100px;
-        width: 100px;
-        display: inline-block;
-        margin: 20px;
-        position: relative;
-        left: 70px;
-        top: 70px;
-        transform: rotate(15deg);
-    }
-    
-    .d3{
-        border: 5px solid rebeccapurple;
-        background-color: blueviolet;
-        height: 100px;
-        width: 100px;
-        display: inline-block;
-        margin: 20px;
-        position: relative;
-        left: 140px;
-        top: 175px;
-        transform: rotate(30deg);
-    }
-    
-    .d4{
-        border: 5px solid rebeccapurple;
-        background-color: blueviolet;
-        height: 100px;
-        width: 100px;
-        display: inline-block;
-        margin: 20px;
-        position: relative;
-        left: 210px;
-        top: 315px;
-        transform: rotate(45deg);
-    }
-    
-    .d5{
-        border: 5px solid rebeccapurple;
-        background-color: blueviolet;
-        height: 100px;
-        width: 100px;
-        display: inline-block;
-        margin: 20px;
-        position: relative;
-        left: 280px;
-        top: 490px;
-        transform: rotate(60deg);
-    }
-    
-    .d6{
-        border: 5px solid rebeccapurple;
-        background-color: blueviolet;
-        height: 100px;
-        width: 100px;
-        display: inline-block;
-        margin: 20px;
-        position: relative;
-        left: 385px;
-        top: 385px;
-        transform: rotate(75deg);
-    }
-    
-    .d{
-        text-align: center;
-    }
+.main-nav {
+  position: sticky;
+  top: 0;
+  background-color: blueviolet;
 }
 
-@media only screen and (max-width: 768px) {
-    *{
-        font-size: 1.25em;
-    }
-    .sub-container{
-        position: absolute;
-    }
-    .d{
-        text-align: center;
-    }
-    
-    .d1{
-        border: 5px solid rebeccapurple;
-        background-color: blueviolet;
-        height: 50px;
-        width: 50px;
-        display: inline-block;
-        margin-left: 5px;
-        margin-top: 5px;
-    }
-    .d2{
-        position: relative;
-        border: 5px solid rebeccapurple;
-        background-color: blueviolet;
-        height: 50px;
-        width: 50px;
-        display: inline-block;
-        margin: 5px;
-        top: 15px;
-        left: 0px;
-        transform: rotate(15deg);
-    }
-    .d3{
-        position: relative;
-        border: 5px solid rebeccapurple;
-        background-color: blueviolet;
-        height: 50px;
-        width: 50px;
-        display: inline-block;
-        margin: 5px;
-        top: 60px;
-        left: 5px;
-        transform: rotate(30deg);
-    }
-    .d4{
-        position: relative;
-        border: 5px solid rebeccapurple;
-        background-color: blueviolet;
-        height: 50px;
-        width: 50px;
-        display: inline-block;
-        margin: 5px;
-        top: 135px;
-        left: 5px;
-        transform: rotate(45deg);
-    }
+.main-nav ul {
+  display: flex;
+  height: 50px;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
-    .d5{
-        position: relative;
-        border: 5px solid rebeccapurple;
-        background-color: blueviolet;
-        height: 50px;
-        width: 50px;
-        display: inline-block;
-        margin: 5px;
-        top: 240px;
-        left: -10px;
-        transform: rotate(45deg);
-    }
-    .d6{
-        position: relative;
-        border: 5px solid rebeccapurple;
-        background-color: blueviolet;
-        height: 50px;
-        width: 50px;
-        display: inline-block;
-        margin: 5px;
-        top: 300px;
-        left: 50%;
-        transform: rotate(60deg);
-    }
+.main-nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+.main-nav ul li {
+  list-style: none;
+}
+
+.main-nav ul li:hover {
+  font-size: 1.5em;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-content h1 {
+  color: blueviolet;
+  margin-bottom: 2.5rem;
+}
+
+.profile-pic {
+  width: 300px;
+  border-radius: 50%;
+  border: 3px solid blueviolet;
+}
+
+.short-intro {
+  margin-top: 1.5rem;
+  color: blueviolet;
+  font-size: 1.3rem;
+  font-weight: 10%;
+}
+
+.long-intro {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.intro-item {
+  color: white;
+  padding: 0.9rem;
+  width: 60%;
+  background-color: blueviolet;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.intro-item-1 {
+  align-self: center;
+}
+.intro-item-2 {
+  align-self: flex-start;
+  margin-left: 0.5rem;
+}
+
+.intro-item-3 {
+  align-self: flex-end;
+  margin-right: 0.5rem;
+}
+
+footer {
+  margin-top: 1.5rem;
+  text-align: center;
+  color: blueviolet;
 }
