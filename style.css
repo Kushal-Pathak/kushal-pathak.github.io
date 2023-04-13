@@ -94,3 +94,9 @@ footer {
   text-align: center;
   color: blueviolet;
 }
+
+@media all and (max-width: 700px) {
+  .intro-item {
+    width: 80%;
+  }
+}
