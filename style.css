@@ -107,7 +107,7 @@ body {
 }
 .skill-list div {
   margin-bottom: 1rem;
-  margin-right: 1.5rem;
+  margin-left: 1.5rem;
 }
 footer {
   text-align: center;
@@ -160,5 +160,38 @@ footer {
   }
   .contacts {
     width: 53%;
+  }
+}
+
+@media all and (max-width: 470px) {
+  .intro-text {
+    padding: 0.5rem;
+  }
+  .contacts {
+    width: 60%;
+  }
+}
+
+@media all and (max-width: 420px) {
+  .intro-text {
+    padding: 0.5rem;
+  }
+  .contacts {
+    width: 80%;
+  }
+  .main-nav ul {
+    justify-content: space-between;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .intro-text {
+    padding: 0.5rem;
+  }
+  .contacts {
+    width: 80%;
+  }
+  .contacts ul {
+    flex-wrap: wrap;
   }
 }
