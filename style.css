@@ -48,14 +48,15 @@ body {
   width: 350px;
   height: 350px;
   border-radius: 50%;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), -2px -2px 5px rgba(0, 0, 0, 0.5),
-    -2px 2px 5px rgba(0, 0, 0, 0.5), 2px -2px 5px rgba(0, 0, 0, 0.5);
-}
-
-.my-pic:hover {
   box-shadow: 3px 3px 5px rgba(45, 63, 78, 0.65),
     -3px -3px 5px rgba(45, 78, 63, 0.65), -3px 3px 5px rgba(45, 63, 78, 0.65),
     3px -3px 5px rgba(45, 63, 78, 0.65);
+}
+
+.my-pic:hover {
+  
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), -2px -2px 5px rgba(0, 0, 0, 0.5),
+    -2px 2px 5px rgba(0, 0, 0, 0.5), 2px -2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .short-intro {
