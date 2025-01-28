@@ -1,118 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Kushal Pathak</title>
-  </head>
-  <body id="home">
-    <div class="main-container">
-      <nav class="main-nav">
-        <ul>
-          <li><a class="nav-a" href="#home">Home</a></li>
-          <li><a class="nav-a" href="#about">About</a></li>
-          <li><a class="nav-a" href="#skill">Skills</a></li>
-          <li><a class="nav-a" href="#contact">Contact</a></li>
-          <li><a class="nav-a" id="mode">DARK</a></li>
-        </ul>
-      </nav>
 
-      <main class="main-content">
-        <section class="intro">
-          <h1>Welcome!</h1>
-          <img id="about" src="me.png" alt="my pic" class="my-pic" />
-          <p class="short-intro">Hey there! It's me Kushal</p>
-          <p class="intro-text">
-            I am a 22 year-old bachelor's student. I was born and raised in
-            Gaindakot Nepal, and currently reside in Gaindakot. In my free time,
-            I enjoy coding and gaming, such as Simulations for coding and
-            Valorant for gaming. I'm also passionate about Free and Open Source
-            Softwares, and enjoy volunteering my time to make a difference.
-            <br /><br />
-            As for my educational background, I am an undergrad from Tribhuwan
-            University. I gained experience in web development through practice.
-            I'm always eager to learn and expand my skill set, which is why I'm
-            doing coding.
-            <br /><br />
-            Overall, I am a empathetic, curious, and hardworking individual who
-            is excited to see what the future holds. I'm looking forward to
-            meeting new people, exploring new opportunities, and making a
-            difference in the world.
-          </p>
-        </section>
-        <section class="skill-section" id="skill">
-          <h1>My Skills</h1>
-          <div class="skill-list">
-            <div>
-              <h2>Beginner</h2>
-              <ul>
-                <li>NEXT.js</li>
-                <li>BLENDER</li>
-                <li>UNITY</li>
-                <li>PHOTOSHOP</li>
-              </ul>
-            </div>
-            <div>
-              <h2>Intermediate</h2>
-              <ul>
-                <li>FIGMA</li>
-                <li>REACT.js</li>
-                <li>CSS</li>
-                <li>MY SQL</li>
-              </ul>
-            </div>
-            <div>
-              <h2>Advanced</h2>
-              <ul>
-                <li>HTML</li>
-                <li>JAVASCRIPT</li>
-                <li>NODE.js x EXPRESS.js</li>
-                <li>MONGODB</li>
-                <li>C/C++</li>
-              </ul>
-            </div>
-          </div>
-        </section>
+<head>
+  <!-- Metadata of the Webpage -->
+  <!-- Character-set Metadata -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Viewport Metadata -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Description Metadata-->
+  <meta name="description" content="Portfolio Website" />
+  <!-- Author Metadata -->
+  <meta name="author" content="Kushal Pathak" />
+  <!-- Keyword Metadata -->
+  <meta name="keywords" content="Kushal Pathak, Kushal, Pathak, Kushal Pathal Website" />
+  <!-- Webpage Logo -->
+  <link rel="shortcut icon" href="profile-pic.ico" />
+  <!-- Webpage Title -->
+  <title>Kushal Pathak</title>
 
-        <section id="contact" class="contact-section">
-          <h1>Contact Me</h1>
-          <div class="contacts">
-            <ul>
-              <li>
-                <a
-                  target="blank"
-                  href="https://www.facebook.com/kushalpathak.100"
-                  >facebook</a
-                >
-              </li>
-              <li>
-                <a
-                  target="blank"
-                  href="https://www.linkedin.com/in/kushal-pathak-9501121a4"
-                  >linkedin</a
-                >
-              </li>
-              <li>
-                <a target="blank" href="https://github.com/Kushal-Pathak"
-                  >github</a
-                >
-              </li>
-              <li>
-                <a
-                  target="blank"
-                  href="https://www.youtube.com/channel/UCS_FTmgQo1uACueCWMQMKlw"
-                  >youtube</a
-                >
-              </li>
-            </ul>
-          </div>
-        </section>
-      </main>
+  <!-- Import CSS: Main Stylesheet -->
+  <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
 
-      <footer><p>&copy; 2023 Kushal Pathak. All rights reserved.</p></footer>
+<body>
+  <div id="particles-js">
+    <div class="header">
+      <h1>
+        <span class="site-title">Kushal Pathak</span>
+        <span class="site-description">Web Developer • Desktop Developer • Simulation Engineer</span>
+      </h1>
+      <div class="header-icons">
+        <a aria-label="My LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/kushal-pathak/">
+          <i class="icon fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <a aria-label="My Github Profile" target="_blank" href="https://github.com/kushal-pathak">
+          <i class="icon fa fa-github-alt" aria-hidden="true"></i>
+        </a>
+        <a aria-label="My Résumé" href="Resume_Kushal_Pathak.pdf" download="Resume_Kushal_Pathak.pdf">
+          <i class="icon fa fa fa-file-pdf-o" aria-hidden="true"></i>
+        </a>
+        <a aria-label="Send Email" href="mailto:kushalpathak80@gmail.com" target="_blank"><i
+            class="icon fa fa-envelope"></i></a>
+      </div>
+      <div class="header-links">
+        <a class="link" href="#about" data-scroll>About Me</a>
+        <a class="link" href="#projects" data-scroll>Projects</a>
+      </div>
     </div>
-    <script src="index.js"></script>
-  </body>
+    <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+  </div>
+
+  <!-- About Section -->
+  <section id="about">
+    <!-- User Introduction-->
+    <div class="user-details">
+      <h1>My Story</h1>
+      <picture>
+        <source type="image/png" srcset="./assets/img/png/me.png" alt="Professional Me" width="20%"
+          style="border-radius: 50%" />
+        <img src="./assets/img/jpg/me.png" alt="Professional Me" width="20%" style="border-radius: 50%" />
+      </picture>
+      <p>
+        Aspiring Software Developer with 5+ years of programming experience
+        and a strong foundation in problem-solving and coding. Proficient in
+        designing and implementing solutions through academic projects,
+        personal initiatives, and coursework. Eager to apply technical skills,
+        collaborate with teams, and gain hands-on industry experience.
+        Committed to continuous learning and delivering impactful results in
+        dynamic environments.
+      </p>
+    </div>
+
+    <!-- User Specifics -->
+    <div class="user">
+      <!-- Technology Stack #1: Languages -->
+      <div class="tech">
+        <h2>Languages</h2>
+        <i class="devicon-python-plain colored"></i>
+        <i class="devicon-java-plain-wordmark colored"></i>
+        <i class="devicon-cplusplus-plain colored"></i>
+        <i class="devicon-javascript-plain colored"></i>
+        <p>
+          My favorite languages for systems programming, software engineering,
+          and data analysis.
+        </p>
+      </div>
+
+      <!-- Technology Stack #2: Front-End -->
+      <div class="tech">
+        <h2>Front-End</h2>
+        <i class="devicon-react-original colored"></i>
+        <i class="devicon-bootstrap-plain-wordmark colored"></i>
+        <i class="devicon-html5-plain-wordmark colored"></i>
+        <i class="devicon-css3-plain-wordmark colored"></i>
+        <p>
+          My preferred technologies for front-end web development and
+          component design.
+        </p>
+      </div>
+
+      <!-- Technology Stack #3: Back-End -->
+      <div class="tech">
+        <h2>Back-End</h2>
+        <i class="devicon-nodejs-plain colored"></i>
+        <i class="devicon-express-original-wordmark colored"></i>
+        <i class="devicon-mongodb-plain-wordmark colored"></i>
+        <i class="devicon-postgresql-plain-wordmark colored"></i>
+        <p>
+          My preferred technologies for back-end web programming and database
+          architecture.
+        </p>
+      </div>
+
+      <!-- Technology Stack #4: Tools -->
+      <div class="tech">
+        <h2>Tools</h2>
+        <i class="devicon-git-plain-wordmark colored"></i>
+        <i class="devicon-visualstudio-plain colored"></i>
+        <i class="devicon-github-plain-wordmark colored"></i>
+        <i class="devicon-docker-plain-wordmark colored"></i>
+        <p>
+          My favorite tools for version control, code editing, and container
+          orchestration.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="user-details">
+      <h1>Featured Projects</h1>
+    </div>
+
+    <!-- User Project #1: Personal Résumé Website -->
+    <div class="user-projects">
+      <div class="images-right">
+        <picture>
+          <source type="image/webp" srcset="./assets/img/webp/mysite.jpg" alt="Personal Website" />
+          <img alt="Personal Website" src="./assets/img/jpg/mysite.jpg" />
+        </picture>
+      </div>
+      <div class="contents" style="text-align: center">
+        <h3>Personal Website</h3>
+        <div>
+          <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/react.svg" style="
+                filter: invert(73%) sepia(74%) saturate(1552%)
+                  hue-rotate(169deg) brightness(109%) contrast(97%);
+              " />
+          &nbsp;
+          <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/bootstrap.svg" style="
+                filter: invert(24%) sepia(14%) saturate(2270%)
+                  hue-rotate(222deg) brightness(102%) contrast(90%);
+              " />
+          &nbsp;
+          <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
+        </div>
+        <p style="text-align: justify">
+          I developed and designed a website using ReactJS and Bootstrap,
+          hosted on Github Pages, to showcase my web presence, story, work
+          experience, education, projects, and achievements in an interactive
+          and visually-appealing format.
+        </p>
+        <a class="project-link" target="_blank" href="https://www.kushalpathak.com.np">Check it out!</a>
+      </div>
+    </div>
+
+    <!-- User Project #2: Yelp Camp -->
+    <div class="user-projects">
+      <div class="images-left">
+        <picture>
+          <source type="image/webp" srcset="./assets/img/webp/yelpcamp.webp" alt="Yelp Camp" />
+          <img alt="Yelp Camp" src="./assets/img/jpg/yelpcamp.jpg" />
+        </picture>
+      </div>
+      <div class="contents-right" style="text-align: center">
+        <h3>Yelp Camp</h3>
+        <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/react.svg" style="
+              filter: invert(73%) sepia(74%) saturate(1552%) hue-rotate(169deg)
+                brightness(109%) contrast(97%);
+            " />
+        &nbsp;
+        <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/css3.svg" style="
+              filter: invert(33%) sepia(29%) saturate(3844%) hue-rotate(184deg)
+                brightness(90%) contrast(84%);
+            " />
+        &nbsp;
+        <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
+        <p style="text-align: justify">
+          I created a web app for campers. Campers can add their camping sites
+          and share with others along with map location and images .
+        </p>
+        <a class="project-link" target="_blank" href="https://github.com/Kushal-Pathak/yelpcamp">Check it out!</a>
+      </div>
+    </div>
+
+    <!-- User Project #3: Digital Logic Simulator -->
+    <div class="user-projects">
+      <div class="images-right">
+        <picture>
+          <source type="image/webp" srcset="./assets/img/webp/dls.webp" alt="COVID-19 Tracker App" />
+          <img alt="Digital Logic Simulator" src="./assets/img/jpg/dls.jpg" />
+        </picture>
+      </div>
+      <div class="contents" style="text-align: center">
+        <h3>Digital Logic Simulator</h3>
+        <div>
+          <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/javascript.svg" style="
+                filter: invert(96%) sepia(47%) saturate(4151%)
+                  hue-rotate(338deg) brightness(100%) contrast(95%);
+              " />
+        </div>
+        <p style="text-align: justify">
+          I created a web based digital logic simulator to design and simulate
+          digital logic gates.
+        </p>
+        <a class="project-link" target="_blank" href="#"> Check it out! </a>
+      </div>
+    </div>
+
+    <!-- Use Project #4: Magnetic Field Simulation -->
+    <div class="user-projects">
+      <div class="images-left">
+        <picture>
+          <source type="image/webp" srcset="./assets/img/webp/mfs.webp" alt="Magnetic Field Simulation" />
+          <img alt="Magnetic Field Simulation" src="./assets/img/jpg/mfs.jpg" />
+        </picture>
+      </div>
+      <div class="contents-right" style="text-align: center">
+        <h3>Magnetic Field Simulation</h3>
+        <div>
+          <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/javascript.svg" style="
+                filter: invert(22%) sepia(77%) saturate(1486%)
+                  hue-rotate(183deg) brightness(101%) contrast(103%);
+              " />
+        </div>
+        <p style="text-align: justify">
+          I developed a web based magnetic field simulator along with data
+          visualization to help for ore depth analysis.
+        </p>
+        <a class="project-link" target="_blank" href="https://kushalpathak.com.np/Magnetic-Fields/Work-1/index.html">
+          Check it out!
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; Kushal Pathak 2025</p>
+  </footer>
+
+  <!-- Import JS: Particles Theme -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <!-- Import JS: Sweet Scroll -->
+  <script src="./assets/js/sweet-scroll.min.js"></script>
+  <!-- Import JS: Main Script -->
+  <script src="./assets/js/main.js"></script>
+</body>
+
 </html>
