@@ -21,6 +21,10 @@ p {
     text-align: justify;
 }
 
+footer p {
+    text-align: center;
+}
+
 article,
 aside,
 details,
