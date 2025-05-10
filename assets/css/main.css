@@ -17,6 +17,10 @@ body {
     font-family: 'Nunito Sans', sans-serif
 }
 
+p {
+    text-align: justify;
+}
+
 article,
 aside,
 details,
