@@ -31,28 +31,42 @@
 }
 
 .profile-ring {
+  position: relative;
   width: 100%;
   height: 100%;
-  padding: 7px;
+  display: grid;
+  place-items: center;
+  padding: 10px;
   border-radius: 50%;
+  background: conic-gradient(
+    from -28deg,
+    #b9adff 0deg 34deg,
+    #ffffff 34deg 47deg,
+    #f8a9ca 47deg 88deg,
+    #ffffff 88deg 102deg,
+    #ffbd8a 102deg 138deg,
+    #ffffff 138deg 153deg,
+    #ffe18a 153deg 196deg,
+    #ffffff 196deg 212deg,
+    #a9e7bc 212deg 256deg,
+    #ffffff 256deg 272deg,
+    #aee4ff 272deg 318deg,
+    #ffffff 318deg 360deg
+  );
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.1);
+}
 
-  background:
-    linear-gradient(#ffffff, #ffffff) padding-box,
-    linear-gradient(
-        135deg,
-        #8b7cff,
-        #ff9b8e,
-        #ffd66b,
-        #63ddb5,
-        #68c7f4
-      )
-      border-box;
-
-  border: 3px solid transparent;
-  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.12);
+.profile-ring::before {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  border-radius: inherit;
+  background: #ffffff;
 }
 
 .profile-image {
+  position: relative;
+  z-index: 1;
   width: 100%;
   height: 100%;
   border-radius: 50%;
