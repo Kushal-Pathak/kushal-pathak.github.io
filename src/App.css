@@ -184,11 +184,11 @@
     max-width: 330px;
   }
 
-  .hero-actions {
+  /* .hero-actions {
     width: min(100%, 350px);
     flex-direction: column;
     gap: 14px;
-  }
+  } */
 
   .hero-button {
     width: 100%;
