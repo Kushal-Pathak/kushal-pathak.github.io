@@ -46,7 +46,7 @@
 .profile-arc {
   fill: none;
   stroke: var(--arc-color);
-  stroke-width: 3;
+  stroke-width: 1.4;
   opacity: 0.9;
   filter:
     drop-shadow(0 0 4px var(--arc-color))
