@@ -27,62 +27,77 @@
   position: relative;
   width: 172px;
   height: 172px;
+  display: grid;
+  place-items: center;
   margin-bottom: 28px;
+}
+
+.profile-arcs {
+  position: absolute;
+  inset: -4px;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  overflow: visible;
+  pointer-events: none;
+  transform-origin: center;
+  animation: profile-arcs-spin 18s linear infinite;
+}
+
+.profile-arc {
+  fill: none;
+  stroke: var(--arc-color);
+  stroke-width: 3;
+  opacity: 0.9;
+  filter:
+    drop-shadow(0 0 4px var(--arc-color))
+    drop-shadow(0 0 10px var(--arc-color));
+}
+
+.profile-arc.lavender {
+  --arc-color: #8f6cff;
+}
+
+.profile-arc.pink {
+  --arc-color: #ff6f96;
+}
+
+.profile-arc.yellow {
+  --arc-color: #ffd84f;
+}
+
+.profile-arc.mint {
+  --arc-color: #3edfa7;
+}
+
+.profile-arc.cyan {
+  --arc-color: #58d7ff;
+}
+
+@keyframes profile-arcs-spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .profile-ring {
   position: relative;
-  width: 100%;
-  height: 100%;
+  z-index: 1;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
   display: grid;
   place-items: center;
-  padding: 10px;
+  padding: 5px;
   border-radius: 50%;
-  background: conic-gradient(
-    from -28deg,
-    #b9adff 0deg 34deg,
-    #ffffff 34deg 47deg,
-    #f8a9ca 47deg 88deg,
-    #ffffff 88deg 102deg,
-    #ffbd8a 102deg 138deg,
-    #ffffff 138deg 153deg,
-    #ffe18a 153deg 196deg,
-    #ffffff 196deg 212deg,
-    #a9e7bc 212deg 256deg,
-    #ffffff 256deg 272deg,
-    #aee4ff 272deg 318deg,
-    #ffffff 318deg 360deg
-  );
-  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.1);
-}
-
-.profile-ring::before {
-  content: "";
-  position: absolute;
-  inset: 5px;
-  border-radius: inherit;
   background: #ffffff;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
 }
 
 .profile-image {
-  position: relative;
-  z-index: 1;
   width: 100%;
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
-}
-
-.profile-status {
-  position: absolute;
-  right: 5px;
-  bottom: 17px;
-  width: 28px;
-  height: 28px;
-  border: 5px solid #ffffff;
-  border-radius: 50%;
-  background: #48d5a4;
 }
 
 .hero-title {
