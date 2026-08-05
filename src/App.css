@@ -23,6 +23,66 @@
   text-align: center;
 }
 
+.symbol-field {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.symbol-token {
+  position: absolute;
+  left: var(--left);
+  top: var(--top);
+  color: var(--symbol-color);
+  font-size: var(--size);
+  font-weight: 700;
+  line-height: 1;
+  text-shadow: 0 0 18px var(--symbol-color);
+  transform: translate(-50%, -50%);
+  animation: symbol-drift var(--duration) ease-in-out infinite alternate;
+  animation-delay: var(--delay);
+  will-change: transform;
+}
+
+.symbol-glyph {
+  display: block;
+  font-family:
+    "SFMono-Regular",
+    "Cascadia Code",
+    "Fira Code",
+    "JetBrains Mono",
+    Consolas,
+    monospace;
+  transform-origin: center;
+  animation: symbol-spin var(--spin-duration) linear infinite;
+  animation-direction: var(--spin-direction);
+  will-change: transform;
+}
+
+@keyframes symbol-drift {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+
+  45% {
+    transform:
+      translate(calc(-50% + (var(--dx) * -0.45)), calc(-50% + (var(--dy) * 0.65)));
+  }
+
+  100% {
+    transform:
+      translate(calc(-50% + var(--dx)), calc(-50% + var(--dy)));
+  }
+}
+
+@keyframes symbol-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .profile-wrapper {
   position: relative;
   width: 172px;
