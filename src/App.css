@@ -39,7 +39,10 @@
   font-size: var(--size);
   font-weight: 700;
   line-height: 1;
-  text-shadow: 0 0 18px var(--symbol-color);
+  text-shadow:
+    0 0 6px var(--symbol-color),
+    0 0 16px var(--symbol-color),
+    0 0 30px var(--symbol-color);
   transform: translate(-50%, -50%);
   animation: symbol-drift var(--duration) ease-in-out infinite alternate;
   animation-delay: var(--delay);
