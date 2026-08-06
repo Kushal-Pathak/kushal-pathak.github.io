@@ -305,14 +305,14 @@ function App() {
         </h1>
 
         <p className="hero-role">
-          Software Engineer{" "}
-          <span className="backend">(Backend</span>
+          Fullstack Software Engineer{" "}
+          {/* <span className="backend">(Backend</span>
           <span> &amp; </span>
-          <span className="frontend">Frontend)</span>
+          <span className="frontend">Frontend)</span> */}
         </p>
 
         <p className="hero-description">
-          I build clean, scalable, and delightful web experiences.
+          I turn ambitious ideas into clear, scalable, and user-friendly products.
         </p>
 
         <div className="social-links">
