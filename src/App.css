@@ -64,6 +64,15 @@
   will-change: transform;
 }
 
+.symbol-core {
+  display: block;
+  transform-origin: center;
+  animation: symbol-pulse var(--pulse-duration) ease-in-out infinite alternate;
+  animation-delay: var(--pulse-delay);
+  animation-direction: var(--pulse-direction);
+  will-change: transform;
+}
+
 @keyframes symbol-drift {
   0% {
     transform: translate(-50%, -50%);
@@ -83,6 +92,24 @@
 @keyframes symbol-spin {
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes symbol-pulse {
+  0% {
+    transform: scale(0.88);
+  }
+
+  38% {
+    transform: scale(var(--pulse-scale));
+  }
+
+  62% {
+    transform: scale(calc(var(--pulse-scale) - 0.05));
+  }
+
+  100% {
+    transform: scale(0.92);
   }
 }
 

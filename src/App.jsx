@@ -116,6 +116,114 @@ const symbolColors = [
   "rgba(217, 70, 239, 0.26)",
 ];
 
+const symbolPulseDurations = [
+  "7s",
+  "11s",
+  "8.5s",
+  "13s",
+  "9.5s",
+  "12s",
+  "7.8s",
+  "14s",
+  "10.5s",
+  "8s",
+  "15s",
+  "9s",
+  "12.8s",
+  "7.4s",
+  "11.6s",
+  "13.5s",
+  "8.8s",
+  "10s",
+  "14.5s",
+  "7.2s",
+  "12.2s",
+  "9.8s",
+  "15.5s",
+  "10.8s",
+];
+
+const symbolPulseDelays = [
+  "-1s",
+  "-6s",
+  "-3s",
+  "-10s",
+  "-5s",
+  "-8s",
+  "-2s",
+  "-12s",
+  "-7s",
+  "-4s",
+  "-11s",
+  "-6.5s",
+  "-9s",
+  "-2.5s",
+  "-8.5s",
+  "-13s",
+  "-3.5s",
+  "-7.5s",
+  "-14s",
+  "-1.8s",
+  "-10.5s",
+  "-5.5s",
+  "-12.5s",
+  "-4.5s",
+];
+
+const symbolPulseScales = [
+  "1.18",
+  "1.11",
+  "1.24",
+  "1.14",
+  "1.2",
+  "1.16",
+  "1.22",
+  "1.13",
+  "1.19",
+  "1.25",
+  "1.12",
+  "1.21",
+  "1.15",
+  "1.23",
+  "1.17",
+  "1.1",
+  "1.24",
+  "1.14",
+  "1.2",
+  "1.22",
+  "1.16",
+  "1.25",
+  "1.13",
+  "1.19",
+];
+
+const symbolPulseDirections = [
+  "alternate",
+  "alternate-reverse",
+  "alternate-reverse",
+  "alternate",
+  "alternate-reverse",
+  "alternate",
+  "alternate",
+  "alternate-reverse",
+  "alternate",
+  "alternate-reverse",
+  "alternate-reverse",
+  "alternate",
+  "alternate",
+  "alternate-reverse",
+  "alternate",
+  "alternate-reverse",
+  "alternate-reverse",
+  "alternate",
+  "alternate-reverse",
+  "alternate",
+  "alternate",
+  "alternate-reverse",
+  "alternate",
+  "alternate-reverse",
+];
+
 function App() {
   return (
     <main className="portfolio">
@@ -136,9 +244,15 @@ function App() {
               "--spin-duration": symbolSpinDurations[index],
               "--spin-direction": symbolSpinDirections[index],
               "--symbol-color": symbolColors[index],
+              "--pulse-duration": symbolPulseDurations[index],
+              "--pulse-delay": symbolPulseDelays[index],
+              "--pulse-scale": symbolPulseScales[index],
+              "--pulse-direction": symbolPulseDirections[index],
             }}
           >
-            <span className="symbol-glyph">{item.symbol}</span>
+            <span className="symbol-glyph">
+              <span className="symbol-core">{item.symbol}</span>
+            </span>
           </span>
         ))}
       </div>
