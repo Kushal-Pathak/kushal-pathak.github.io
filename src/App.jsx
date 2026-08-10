@@ -543,8 +543,8 @@ function App() {
         <p className="hero-role">Fullstack Software Engineer</p>
 
         <p className="hero-description">
-          I build web applications, work with APIs, databases, and web systems,
-          and try to improve the code I work with.
+          I build web applications, work with APIs and databases, and engineer
+          practical solutions to real business problems.
         </p>
 
         <div className="social-links">
